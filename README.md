@@ -28,7 +28,7 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 npm i -g yarn
 yarn
 
-#first install
+# project install
 vue init webpack admin
 yarn add buefy
 yarn add node-sass sass-loader
