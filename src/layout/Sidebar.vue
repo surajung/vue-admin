@@ -2,17 +2,21 @@
   <aside class="menu app-sidebar">
     <p class="menu-label">메뉴</p>
     <ul class="menu-list">
-      <li>
-        <router-link to="/">
-          홈
+      <li v-for="(item, index) in menus">
+        <router-link :to="item.path" :exact="true">
+          {{ item.meta.label }}
         </router-link>
       </li>
     </ul>
   </aside>
 </template>
 <script>
+import { mapGetters } from 'vuex'
 export default {
-  name: 'Sidebar'
+  name: 'Sidebar',
+  computed: mapGetters({
+    menus: 'menus'
+  })
 }
 </script>
 <style lang="scss">

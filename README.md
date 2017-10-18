@@ -37,6 +37,9 @@ yarn add -D electron
 yarn add -D cross-env
 yarn run dev
 
+# progressbar install
+yarn add vue-nprogress
+
 # electron build prompt
 yarn electron
 

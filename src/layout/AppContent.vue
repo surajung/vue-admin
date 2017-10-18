@@ -3,7 +3,7 @@
     <div class="container is-fluid is-marginleff app-content">
       <transition name="fade" mode="out-in" appear>
         <router-view>
-          Content
+          <!-- router -->
         </router-view>
       </transition>
     </div>
