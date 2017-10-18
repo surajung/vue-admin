@@ -1,4 +1,4 @@
-# admin
+# vue-admin example
 
 > A Vue.js project
 
@@ -20,16 +20,24 @@ npm run build --report
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
-# install
+## install
 
 ``` bash
-vue init webpack admin
+
+# yarn install
 npm i -g yarn
 yarn
+
+#first install
+vue init webpack admin
 yarn add buefy
 yarn add node-sass sass-loader
 yarn add vuex
 yarn add -D electron
 yarn add -D cross-env
+yarn run dev
+
+# electron build prompt
 yarn electron
+
 ```
