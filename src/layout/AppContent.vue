@@ -1,5 +1,6 @@
 <template>
   <section class="app-main">
+    <levelbar></levelbar>
     <div class="container is-fluid is-marginleff app-content">
       <transition name="fade" mode="out-in" appear>
         <router-view>
@@ -10,13 +11,17 @@
   </section>
 </template>
 <script>
+import Levelbar from './Levelbar'
 export default {
-  name: 'AppContent'
+  name: 'AppContent',
+  components: {
+    Levelbar
+  }
 }
 </script>
 <style lang="scss">
 .app-main {
-  padding-top:52px;margin-left:180px;
+  padding:52px 10px 10px;margin-left:180px;
 }
 .fade-enter {
   opacity:0;transition:opacity 0.5s;

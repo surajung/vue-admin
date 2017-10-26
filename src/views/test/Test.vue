@@ -1,13 +1,13 @@
 <template>
   <div>
-    <router-view></router-view>
+    Test 컴포넌트
   </div>
 </template>
 <script>
 export default {
-  name: 'Test'
+  name: 'TestIndex'
 }
 </script>
-<style lang="scss">
+<style>
 
 </style>

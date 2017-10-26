@@ -6,6 +6,14 @@
         <router-link :to="item.path" :exact="true">
           {{ item.meta.label }}
         </router-link>
+
+        <ul v-if="item.children">
+          <li v-for="child in item.children" v-if="child.path !== ''">
+            <router-link :to="`${item.path}/${child.path}`">
+              {{ child.meta.label }}
+            </router-link>
+          </li>
+        </ul>
       </li>
     </ul>
   </aside>

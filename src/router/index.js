@@ -11,11 +11,17 @@ const generateRoutes = (menus) => {
     if (menu.path) {
       routes.push(menu)
     }
+
+    if (menu.children) {
+      generateRoutes(menu.children)
+    }
   })
   return routes
 }
 
 export default new Router({
+  mode: 'history',
+  linkActiveClass: 'is-active',
   routes: [
     ...generateRoutes(menusModule.state.items)
   ]

@@ -1,13 +1,13 @@
 <template>
   <div>
-    <router-view></router-view>
+    ChildTest
   </div>
 </template>
 <script>
 export default {
-  name: 'Test'
+  name: 'ChildTest'
 }
 </script>
-<style lang="scss">
+<style>
 
 </style>

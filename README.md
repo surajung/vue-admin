@@ -43,4 +43,9 @@ yarn add vue-nprogress
 # electron build prompt
 yarn electron
 
+# 추가설치
+yarn add vuetable-2
+yarn add babel-preset-es2015 --dev
+yarn add vue-events
+
 ```

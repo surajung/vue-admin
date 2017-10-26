@@ -1,10 +1,12 @@
 import home from './home'
 import test from './test'
+import user from './user'
 
 const state = {
   items: [
     home,
-    test
+    test,
+    user
   ]
 }
 
