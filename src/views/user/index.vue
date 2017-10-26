@@ -79,7 +79,7 @@ export default {
   },
   mounted () {
     this.$events.listen('filter-set', filterText => this.onFilterSet(filterText))
-    this.$events.listen('filter-set', this.onFilterReset)
+    this.$events.listen('filter-reset', this.onFilterReset)
   },
   beforeDestroy () {
     this.$events.remove('filter-set')
